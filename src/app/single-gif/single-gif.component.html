@@ -1,5 +1,11 @@
 <div class="container">
     <div class="row">
+        <div class="col my-3">
+            <button class="btn btn-outline-primary btn-sm" (click)="goBack()">Go back</button>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col">
             <div class="card" *ngIf="gif">
                 <img class="card-img-top" src="{{ gif.images.original.url }}" alt="{{ gif.trending_datetime }}">

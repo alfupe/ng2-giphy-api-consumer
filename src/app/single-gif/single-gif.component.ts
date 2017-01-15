@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GiphyService } from '../services/giphy.service';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
     selector: 'app-single-gif',
@@ -14,7 +15,8 @@ export class SingleGifComponent implements OnInit {
 
     constructor(
         private giphyService: GiphyService,
-        private route: ActivatedRoute
+        private route: ActivatedRoute,
+        private location: Location
     ) {
     }
 
@@ -27,4 +29,7 @@ export class SingleGifComponent implements OnInit {
             .subscribe(gif => this.gif = gif.data);
     }
 
+    goBack() {
+        this.location.back();
+    }
 }
