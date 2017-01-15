@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-    title = 'Trending GIF!';
+    title = 'Giphy API consumption with Angular 2';
 }

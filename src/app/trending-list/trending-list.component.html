@@ -5,7 +5,7 @@
                 <img class="card-img-top" src="{{ gif.images.original.url }}" alt="{{ gif.trending_datetime }}">
                 <div class="card-block">
                     <h4 class="card-title">{{ gif.trending_datetime }}</h4>
-                    <a href="#" class="btn btn-primary">See details</a>
+                    <a [routerLink]="['/single-gif', gif.id]" class="btn btn-primary">See details</a>
                 </div>
             </div>
         </div>
