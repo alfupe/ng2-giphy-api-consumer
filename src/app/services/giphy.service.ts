@@ -20,4 +20,10 @@ export class GiphyService {
 
         return this.http.get(url).map(response => <any> response.json());
     }
+
+    gifById(id: string): Observable<any> {
+        let url = this.buildUrl(`/v1/gifs/${id}`);
+
+        return this.http.get(url).map(response => <any> response.json());
+    }
 }
