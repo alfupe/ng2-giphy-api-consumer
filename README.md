@@ -1,4 +1,5 @@
 # Ng2GiphyExample
+Giphy API consumer example with Angular 2
 
 ## First run
 `npm install`
